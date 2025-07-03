@@ -9,3 +9,5 @@ Last modified 7/2/2025
 6/8/2025: Creation
 
 7/2/2025: Added experience from LBNL
+
+7/2/2025: Updated personal portfolio website
