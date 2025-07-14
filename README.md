@@ -13,3 +13,5 @@ Last modified 7/2/2025
 7/2/2025: Updated personal portfolio website
 
 7/13/2025: Complete overhaul
+
+7/14/2025: Updated word usage
