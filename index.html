@@ -79,22 +79,26 @@
   </head>
   <body>
     <div id="resume">
-      <header>
+      <header id="header">
         <h1>Ethan Chennault</h1>
         <p>
-          2361 Pacific View Ct, San Leandro • (510) 457-5290 •
-          ethan.chennault.net • ethanolchennault@gmail.com
+          San Leandro, CA • (510) 457-5290 •
+          <a href="https://ethan.chennault.net" target="_blank"
+            >ethan.chennault.net</a
+          >
+          •
+          <a href="mailto:ethanolchennault@gmail.com"
+            >ethanolchennault@gmail.com</a
+          >
         </p>
       </header>
       <section id="summary-statement">
         <h2>Summary Statement</h2>
         <hr />
         <p>
-          Motivated and ambitious student, currently studying business and
-          computer science at University of California, Irvine. Interested in
-          positions that increase exposure to industry tools while bolstering
-          experience in several fields of software engineering, including web
-          applications, information retrieval, and project management.
+          Motivated and ambitious student, majoring in Computer Science and
+          Business Information Management at the University of California,
+          Irvine. Interested in full-stack web development and data management.
         </p>
       </section>
 
@@ -105,7 +109,7 @@
           <tr>
             <td>
               <b>Programming Languages</b><br />
-              Javascript, Typescript, Python, C++, Java
+              Javascript, Typescript, Python, C/C++, Java
             </td>
             <td>
               <b>Web Technologies </b><br />
@@ -115,11 +119,11 @@
           <tr>
             <td>
               <b>Database Technologies </b><br />
-              SQL, Postgres, Firebase, Supabase, AWS, MongoDB
+              SQL, Postgres, Firebase, MongoDB (NoSQL), AWS
             </td>
             <td>
               <b>Workflow Tools</b> (and other)<br />
-              Git, GitHub, Linux, Docker, Figma, Drizzle, Prisma
+              Jira, Git, GitHub, GitLab, Linux, Docker, Figma
             </td>
           </tr>
         </table>
@@ -130,58 +134,58 @@
         <hr />
         <section class="experience-item">
           <div class="seperate">
-            <h3>Student Assistant</h3>
-            <span>June 2024 - Present</span>
+            <b>Lawrence Berkeley National Lab</b>
+            <span>June 2025 - Present</span>
           </div>
           <div class="seperate">
-            <span>Lawrence Berkeley National Labs</span>
+            <span>Student Assistant</span>
             <span>Berkeley, CA</span>
           </div>
           <ul>
             <li>
-              Implemented and documented a full design system coonsisting of
+              Implemented and documented a full design system consisting of
               several dozen user interface components from Figma design
-              specifications using React, Typescript, Storybook, and SCSS.
+              specifications using React, Typescript, Vite, and SCSS.
             </li>
             <li>
-              Wrote tests utilizing snapshot testing with Jest and Playwright to
-              provide consistency and 100% code coverage.
+              Wrote visual regression tests with Jest and Storybook to provide
+              assurance and 100% code coverage.
             </li>
           </ul>
         </section>
 
         <section class="experience-item">
           <div class="seperate">
-            <h3>Research Assistant</h3>
+            <b>University of California, Irvine</b>
             <span>Nov 2024 - Present</span>
           </div>
           <div class="seperate">
-            <span>University of California, Irvine</span>
+            <span>Research Assistant</span>
             <span>Irvine, CA</span>
           </div>
           <ul>
             <li>
-              Implemented multithreading for BLANT, allowing an up to 16 times
-              increase in run time via parallelism.
+              Implemented parallelized random sampling on Linux systems,
+              allowing an up to 16 times decrease in runtime.
             </li>
             <li>
-              Optimized the Makefile for BLANT, a graph analysis research tool,
-              reducing build time by 20 percent.
+              Decreased build times by 25% by eliminating redundancy and
+              optimizing the Makefile.
             </li>
             <li>
-              Utilized React and Express in the development of web applications
-              and interfaces for research projects.
+              Developed in-house hosted web frontends for research applications
+              using React and Express.
             </li>
           </ul>
         </section>
 
         <section class="experience-item">
           <div class="seperate">
-            <h3>Summer Technology Intern</h3>
+            <b>Alameda County Information and Technologies Department</b>
             <span>June 2022 - Aug 2022</span>
           </div>
           <div class="seperate">
-            <span>Alameda County Information and Technologies Department</span>
+            <span>Summer Technology Intern</span>
             <span>Oakland, CA</span>
           </div>
           <ul>
@@ -199,21 +203,21 @@
 
         <section class="experience-item">
           <div class="seperate">
-            <h3>Engineering Intern</h3>
+            <b>Hewlett Packard Enterprise</b>
             <span>May 2021 - Aug 2021</span>
           </div>
           <div class="seperate">
-            <span>Hewlett Packard Enterprise</span>
+            <span class="title">Engineering Intern</span>
             <span>Remote</span>
           </div>
           <ul>
             <li>
-              Developed a Python script, to allow developer querying speed of
-              real HPE customer servers.
+              Developed a Python script to remotely connect and query live HPE
+              customer services for data traffic analysis.
             </li>
             <li>
               Created suites of unit and integration tests to ensure code
-              quality across Windows and Linux operating systems.
+              quality across Windows and Linux.
             </li>
           </ul>
         </section>
@@ -222,23 +226,24 @@
       <section id="education">
         <h2>Education</h2>
         <hr />
-        <section>
+        <section class="education-item">
           <div class="seperate">
-            <h3>University of California, Irvine</h3>
+            <b>University of California, Irvine</b>
             <span>September 2023 - Present</span>
           </div>
           <p>
             B.S. in Computer Science, B.S. in Business Information Management
+            (In-Progress)
             <br />
             GPA: 3.83, Dean's Honor List
             <br />
-            Relevant Coursework: Data Structures & Algorithms, Information
-            Retrieval, Intermediate Programming
+            Relevant Coursework: Data Structures and Algorithms, Information
+            Retrieval, Introduction to Data Management
           </p>
         </section>
-        <section>
+        <section class="education-item">
           <div class="seperate">
-            <h3>San Leandro High School</h3>
+            <b>San Leandro High School</b>
             <span>August 2019 - June 2023</span>
           </div>
         </section>
@@ -249,26 +254,30 @@
         <hr />
         <ul>
           <li>
-            <b>Search Engine:</b> Web search engine capable of handling over
-            fifty thousands of documents, utilizing ranked retrieval based on
+            <b>BLANT:</b> Graph analysis tool written in C for analyzing
+            networks with up to billions of nodes and edges, utilizing
+            parallelized random sampling to index and determine frequency of
+            graphlets.
+          </li>
+          <li>
+            <b>Search Engine:</b> Web search engine written in Python capable of
+            handling over 50,000 documents, utilizing ranked retrieval based on
             tf-idf, and having a query response time of 100 milliseconds.
           </li>
           <li>
-            <b>Sense:</b> Fullstack web application for managing a personal
-            budget, inspired by YNAB, utilizing Postgres to handle hundreds of
-            users and budgets, stored on a Postgres database with a React/TS
-            frontend.
+            <b>Sense:</b> Full-stack web application for managing a personal
+            budget, capable of handling over 1,000 users and budgets, stored on
+            a Postgres database with a React/Typescript frontend.
           </li>
           <li>
             <b>Redrawer:</b> Python script for re-creating images on Microsoft
             Paint by analyzing pixel color information and utilizing the Win32
-            API to efficiently redraw images with widths of up to 4 thousand
-            pixels.
+            API to efficiently redraw images with widths of up to 4,000 pixels.
           </li>
         </ul>
       </section>
 
-      <section id="additional">
+      <!-- <section id="additional">
         <h2>Additional</h2>
         <hr />
         <p>
@@ -279,7 +288,7 @@
           <b>Extracurriculars:</b> VP of Membership Development at Sigep, Cal
           Beta Alpha, volunteering at San Leandro Food Pantry
         </p>
-      </section>
+      </section> -->
     </div>
   </body>
 </html>
