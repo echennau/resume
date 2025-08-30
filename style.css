@@ -1,14 +1,16 @@
 @font-face {
   font-family: "League Spartan";
   src: url("./fonts/LeagueSpartan-VariableFont_wght.ttf") format("truetype");
-  font-weight: 100 900; /* Variable range */
+  font-weight: 100 900;
+  /* Variable range */
   font-style: normal;
 }
 
 @font-face {
   font-family: "Noto Serif";
   src: url("./fonts/NotoSerif-VariableFont_wdth,wght.ttf") format("truetype");
-  font-weight: 100 900; /* Variable range */
+  font-weight: 100 900;
+  /* Variable range */
   font-style: normal;
 }
 
@@ -35,7 +37,7 @@ body {
 
 /* Typography */
 h1 {
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   font-family: "Noto Serif", serif;
 }
 
@@ -57,7 +59,7 @@ li,
 span,
 table {
   font-size: 0.9rem;
-  line-height: 1.09rem;
+  line-height: 1.07rem;
   letter-spacing: 0.4px;
   font-weight: 300;
   font-family: "League Spartan", sans-serif;
@@ -116,7 +118,8 @@ hr {
 #skills-table {
   width: 100%;
   border-collapse: collapse;
-  table-layout: fixed; /* Ensures equal column widths */
+  table-layout: fixed;
+  /* Ensures equal column widths */
 }
 
 #skills-table td {
