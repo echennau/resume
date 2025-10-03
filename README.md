@@ -16,4 +16,6 @@ Last modified 10/2/2025
 
 7/14/2025: Updated word usage
 
+8/30/2025: Updated LBNL experience and removed high school line
+
 10/2/2025: Fixed typos and added TerraNova
