@@ -2,7 +2,7 @@
 
 Created with HTML, meant to be 8.5 by 11 inches, printable.
 
-Last modified 7/2/2025
+Last modified 10/2/2025
 
 ## Changelog
 
@@ -15,3 +15,5 @@ Last modified 7/2/2025
 7/13/2025: Complete overhaul
 
 7/14/2025: Updated word usage
+
+10/2/2025: Fixed typos and added TerraNova
