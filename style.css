@@ -111,7 +111,8 @@ hr {
 }
 
 .education-item,
-.experience-item {
+.experience-item,
+.project-item {
   margin-bottom: 0.25rem;
 }
 
@@ -119,11 +120,10 @@ hr {
   width: 100%;
   border-collapse: collapse;
   table-layout: fixed;
-  /* Ensures equal column widths */
 }
 
 #skills-table td {
-  width: 50%;
+  width: 100%;
   vertical-align: top;
   padding: 0;
 }

@@ -2,7 +2,7 @@
 
 Created with HTML, meant to be 8.5 by 11 inches, printable.
 
-Last modified 10/2/2025
+Last modified 10/12/2025
 
 ## Changelog
 
@@ -19,3 +19,5 @@ Last modified 10/2/2025
 8/30/2025: Updated LBNL experience and removed high school line
 
 10/2/2025: Fixed typos and added TerraNova
+
+10/12/2025: Project overhaul

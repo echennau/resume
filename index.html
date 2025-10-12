@@ -93,12 +93,12 @@
         </p>
       </header>
       <section id="summary-statement">
-        <h2>Summary Statement</h2>
+        <h2>Summary</h2>
         <hr />
         <p>
-          Computer Science and Business Information Management double major at
-          UC Irvine with hands-on experience in full-stack development, testing,
-          and data management.
+          Full-stack developer and Computer Science student at the University of
+          California, Irvine, passionate about building beautiful user
+          interfaces, scalable backends, and data-driven applications.
         </p>
       </section>
 
@@ -109,21 +109,21 @@
           <tr>
             <td>
               <b>Programming Languages</b><br />
-              Javascript, Typescript, Python, C/C++, Java
+              JavaScript (TypeScript), Python, Go, C/C++, Java
             </td>
             <td>
               <b>Web Technologies </b><br />
-              HTML, CSS, React, Tailwind, Express, Next.js, Remix
+              React, Vue, Express, Next.js, Remix, Tailwind
             </td>
           </tr>
           <tr>
             <td>
               <b>Database Technologies </b><br />
-              SQL, Postgres, Firebase, MongoDB (NoSQL), AWS
+              SQL, Postgres, Firebase, MongoDB, AWS
             </td>
             <td>
-              <b>Workflow Tools</b> (and other)<br />
-              Jira, Git, GitHub, GitLab, Linux, Docker, Figma
+              <b>Tools</b><br />
+              Git, Linux, Docker, Figma, Jira
             </td>
           </tr>
         </table>
@@ -143,18 +143,17 @@
           </div>
           <ul>
             <li>
-              Developed the user interface for TerraNova, a web application to
-              build and edit interactive network maps, capable of handling
-              several different data sources and custom node icons.
+              Developed the UI for TerraNova, an open-source network
+              visualization tool, using React, Tailwind, and FastAPI.
             </li>
             <li>
-              Implemented and documented a full design system, with several
-              dozen WCAG compliant components, utilizing Figma, Storybook,
-              React, Typescript, and SCSS.
+              Designed, built, and documented a full design system, with 30+
+              WCAG-compliant components, using Figma, web components, Storybook,
+              TypeScript, and SCSS.
             </li>
             <li>
-              Developed visual regression tests using Playwright and Jest,
-              achieving 100% code coverage.
+              Implemented visual regression and interaction tests using
+              Playwright and Jest, preventing frontend issues.
             </li>
           </ul>
         </section>
@@ -170,22 +169,19 @@
           </div>
           <ul>
             <li>
-              Implemented multithreaded random sampling for BLANT, a graph
-              sampling and alignment tool written in C, allowing for a 16 times
-              speedup in runtime on Linux systems.
+              Developed self-hosted web frontend allowing hundreds of scientists
+              to spawn long-running research jobs on university servers using
+              TypeScript and Express.js.
             </li>
             <li>
-              Decreased build times by roughly 25% by eliminating redundancy and
-              optimizing the Makefile.
-            </li>
-            <li>
-              Developed in-house hosted web frontends for research applications
-              using React and Express.
+              Optimized multithreaded random sampling for BLANT, a C graph
+              sampling and alignment tool, allowing for a 16x speedup in runtime
+              on Linux systems.
             </li>
           </ul>
         </section>
 
-        <section class="experience-item">
+        <!-- <section class="experience-item">
           <div class="seperate">
             <b>Alameda County Information and Technologies Department</b>
             <span>June 2022 - Aug 2022</span>
@@ -199,12 +195,12 @@
               Configured and repaired switches, firewalls, and routers, allowing
               for increased network connections.
             </li>
-            <!-- <li>
+           <li>
               Uninstalled and disk wiped nonessential servers in the Oakland
               data center, optimizing the network.
-            </li> -->
+            </li>
           </ul>
-        </section>
+        </section> -->
 
         <section class="experience-item">
           <div class="seperate">
@@ -217,12 +213,12 @@
           </div>
           <ul>
             <li>
-              Developed a Python script to remotely connect and query live HPE
-              customer services for data traffic analysis.
+              Developed a Python data-retrieval script to remotely query live
+              production servers for traffic metadata.
             </li>
             <li>
-              Created suites of tests with Pytest to ensure code
-              quality across Windows and Linux systems.
+              Created suites of tests with Pytest to ensure code quality across
+              Windows and Linux systems.
             </li>
           </ul>
         </section>
@@ -241,9 +237,9 @@
             (Expected 2027)
             <br />
             GPA: 3.83, Dean's Honor List
-            <br />
+            <!-- <br />
             Relevant Coursework: Data Structures and Algorithms, Information
-            Retrieval, Introduction to Data Management
+            Retrieval, Introduction to Data Management -->
           </p>
         </section>
         <!-- <section class="education-item">
@@ -252,35 +248,78 @@
             <span>August 2019 - June 2023</span>
           </div>
         </section> -->
-        </section>
       </section>
 
       <section id="projects">
         <h2>Projects</h2>
         <hr />
-        <ul>
-          <li>
-            <b>BLANT:</b> Graph analysis tool written in C, capable of analyzing
-            networks with billions of nodes and edges, leveraging multithreaded
-            random sampling to index and determine graphlet frequency and
-            distribution.
-          </li>
-          <li>
-            <b>Search Engine:</b> Web search engine written in Python capable of
-            handling over 50,000 documents, utilizing ranked retrieval based on
-            tf-idf, and having a query response time of 100 milliseconds.
-          </li>
-          <li>
-            <b>Sense:</b> Full-stack web application for managing a personal
-            budget, capable of handling over 1,000 users and budgets, stored on
-            a Postgres database with a React and Typescript frontend.
-          </li>
-          <li>
-            <b>Redrawer:</b> Python script for replicating images on Microsoft
-            Paint by analyzing pixel color information and using the Win32 API
-            to efficiently redraw images with widths of up to 4,000 pixels.
-          </li>
-        </ul>
+
+        <section class="project-item">
+          <div><b>Sense</b> <span>(Personal Finance Application)</span></div>
+          <div>
+            <p>
+              Developed a personal budgeting app to track and limit spending
+              across several accounts.
+            </p>
+          </div>
+          <ul>
+            <li>
+              Utilized Next.js and React with server-side rendering and
+              optimistic UI for instantaneous loading.
+            </li>
+            <li>
+              Implemented a REST API to access data in a Postgres database, able
+              to handle over 1,000 users and budgets.
+            </li>
+            <li>
+              Hosted the frontend on Vercel, providing users fast and reliable
+              loading.
+            </li>
+          </ul>
+        </section>
+
+        <section class="project-item">
+          <div><b>Facets </b> <span>(Online Stickyboard)</span></div>
+          <div>
+            <p>
+              Built an online stickyboard forum to post ideas and foster
+              connections.
+            </p>
+          </div>
+          <ul>
+            <li>
+              Implemented a real-time stickyboard and chat with Supabase,
+              supporting up to 200 concurrent users.
+            </li>
+            <li>
+              Incorporated AWS Lambda with cron-based scheduling to create
+              automated daily posts.
+            </li>
+            <li>
+              Leveraged Prisma ORM to create data models schema and store them
+              in a Postgres database.
+            </li>
+          </ul>
+        </section>
+
+        <section class="project-item">
+          <div>
+            <b>Search Engine</b>
+            <span>(Python Web-Crawler and Document Indexer)</span>
+          </div>
+          <div>
+            <span>
+              Created a Python application to download and index over 50,000
+              documents.
+            </span>
+          </div>
+          <ul>
+            <li>
+              Utilized multithreading to manage a ranked document retrieval with
+              below 100 millisecond query time.
+            </li>
+          </ul>
+        </section>
       </section>
     </div>
   </body>
