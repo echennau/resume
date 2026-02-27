@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -96,7 +96,7 @@
         <h2>Summary</h2>
         <hr />
         <p>
-          Full-stack developer and Computer Science student at the University of
+          Software engineer and computer science student at University of
           California, Irvine, passionate about building beautiful user
           interfaces, scalable backends, and data-driven applications.
         </p>
@@ -109,21 +109,21 @@
           <tr>
             <td>
               <b>Programming Languages</b><br />
-              JavaScript (TypeScript), Python, Go, C/C++, Java
+              JavaScript (TypeScript), Python, Go, C
             </td>
             <td>
               <b>Web Technologies </b><br />
-              React, Vue, Express, Next.js, Remix, Tailwind
+              React, Vue, Next.js, Express.js, FastAPI, Remix
             </td>
           </tr>
           <tr>
             <td>
               <b>Database Technologies </b><br />
-              SQL, Postgres, Firebase, MongoDB, AWS
+              SQL, Postgres, Supabase, MongoDB, Elasticsearch
             </td>
             <td>
-              <b>Tools</b><br />
-              Git, Linux, Docker, Figma, Jira
+              <b>Tooling</b><br />
+              Git, Docker, AWS, Linux, Figma
             </td>
           </tr>
         </table>
@@ -143,17 +143,42 @@
           </div>
           <ul>
             <li>
-              Developed the UI for TerraNova, an open-source network
-              visualization tool, using React, Tailwind, and FastAPI.
+              Engineered the user interface for a network visualization tool,
+              utilizing React, React Router, and Tailwind, transforming layers
+              of data into interactive maps; wrote E2E tests to cover 100% of
+              user journeys.
             </li>
             <li>
-              Designed, built, and documented a full design system, with 30+
-              WCAG-compliant components, using Figma, web components, Storybook,
-              TypeScript, and SCSS.
+              Migrated database from Elasticsearch to SQLite, reducing service
+              overhead and simplifying deployment pipeline; optimized FastAPI
+              backend to reduce response size by up to 50%.
             </li>
             <li>
-              Implemented visual regression and interaction tests using
-              Playwright and Jest, preventing frontend issues.
+              Designed and coded a design system with 30+ components, using
+              TypeScript, SCSS, Storybook, Figma; implemented visual regression and interaction tests using
+              Playwright and Jest, maintaining 90%+ coverage.
+            </li>
+          </ul>
+        </section>
+
+        <section class="experience-item">
+          <div class="seperate">
+            <b>UCI ZotBins Project</b>
+            <span>Sep 2025 - Present</span>
+          </div>
+          <div class="seperate">
+            <span>Software Engineer</span>
+            <span>Irvine, CA</span>
+          </div>
+          <ul>
+            <li>
+              Led the design and development of a React dashboard visualizing
+              trash data trends with D3.js; leveraged Next.js data fetching to
+              provide ~200ms load times when viewing time-series graphs.
+            </li>
+            <li>
+              Implemented RESTful API endpoints with FastAPI and Pydantic to
+              post sensor recordings and fetch bin data.
             </li>
           </ul>
         </section>
@@ -161,7 +186,7 @@
         <section class="experience-item">
           <div class="seperate">
             <b>University of California, Irvine</b>
-            <span>Nov 2024 - Present</span>
+            <span>Nov 2024 - Dec 2025</span>
           </div>
           <div class="seperate">
             <span>Research Assistant</span>
@@ -169,39 +194,12 @@
           </div>
           <ul>
             <li>
-              Developed self-hosted web frontend allowing hundreds of scientists
-              to spawn long-running research jobs on university servers using
-              TypeScript and Express.js.
-            </li>
-            <li>
-              Optimized multithreaded random sampling for BLANT, a C graph
-              sampling and alignment tool, allowing for a 16x speedup in runtime
-              on Linux systems.
+              Developed self-hosted web frontend allowing other researchers to
+              to spawn hundreds of long-running parallel HPC jobs on university
+              servers using TypeScript and Express.js.
             </li>
           </ul>
         </section>
-
-        <!-- <section class="experience-item">
-          <div class="seperate">
-            <b>Alameda County Information and Technologies Department</b>
-            <span>June 2022 - Aug 2022</span>
-          </div>
-          <div class="seperate">
-            <span>Summer Technology Intern</span>
-            <span>Oakland, CA</span>
-          </div>
-          <ul>
-            <li>
-              Configured and repaired switches, firewalls, and routers, allowing
-              for increased network connections.
-            </li>
-           <li>
-              Uninstalled and disk wiped nonessential servers in the Oakland
-              data center, optimizing the network.
-            </li>
-          </ul>
-        </section> -->
-
         <section class="experience-item">
           <div class="seperate">
             <b>Hewlett Packard Enterprise</b>
@@ -217,7 +215,7 @@
               production servers for traffic metadata.
             </li>
             <li>
-              Created suites of tests with Pytest to ensure code quality across
+              Wrote unit tests with Pytest to ensure code functionality across
               Windows and Linux systems.
             </li>
           </ul>
@@ -230,24 +228,15 @@
         <section class="education-item">
           <div class="seperate">
             <b>University of California, Irvine</b>
-            <span>September 2023 - Present</span>
+            <span>Sep 2023 - Present</span>
           </div>
           <p>
             B.S. in Computer Science, B.S. in Business Information Management
             (Expected 2027)
             <br />
             GPA: 3.83, Dean's Honor List
-            <!-- <br />
-            Relevant Coursework: Data Structures and Algorithms, Information
-            Retrieval, Introduction to Data Management -->
           </p>
         </section>
-        <!-- <section class="education-item">
-          <div class="seperate">
-            <b>San Leandro High School</b>
-            <span>August 2019 - June 2023</span>
-          </div>
-        </section> -->
       </section>
 
       <section id="projects">
@@ -264,16 +253,12 @@
           </div>
           <ul>
             <li>
-              Utilized Next.js and React with server-side rendering and
-              optimistic UI for instantaneous loading.
+              Utilized server-side rendering and optimistic UI for instantaneous
+              loading and seamless UX.
             </li>
             <li>
-              Implemented a REST API to access data in a Postgres database, able
-              to handle over 1,000 users and budgets.
-            </li>
-            <li>
-              Hosted the frontend on Vercel, providing users fast and reliable
-              loading.
+              Implemented a Node.js REST API with a Supabase database to manage
+              over 1,000 users and budgets.
             </li>
           </ul>
         </section>
@@ -287,36 +272,16 @@
             </p>
           </div>
           <ul>
-            <li>
+            <!-- <li>
               Implemented a real-time stickyboard and chat with Supabase,
               supporting up to 200 concurrent users.
-            </li>
+            </li> -->
             <li>
-              Incorporated AWS Lambda with cron-based scheduling to create
-              automated daily posts.
+              Architected daily engagement posts by impementing cron-triggered AWS Lambda functions.
             </li>
             <li>
               Leveraged Prisma ORM to create data models schema and store them
               in a Postgres database.
-            </li>
-          </ul>
-        </section>
-
-        <section class="project-item">
-          <div>
-            <b>Search Engine</b>
-            <span>(Python Web-Crawler and Document Indexer)</span>
-          </div>
-          <div>
-            <span>
-              Created a Python application to download and index over 50,000
-              documents.
-            </span>
-          </div>
-          <ul>
-            <li>
-              Utilized multithreading to manage a ranked document retrieval with
-              below 100 millisecond query time.
             </li>
           </ul>
         </section>
