@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Ethan Chennault Resume</title>
+    <link rel="stylesheet" href="../style.css" />
+    <meta name="description" content="Ethan Chennault's Resume" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Ethan Chennault - Resume",
+        "description": "Professional Resume for Ethan Chennault",
+        "author": {
+          "@type": "Person",
+          "name": "Ethan Chennault"
+        },
+        "datePublished": "2026-05-17",
+        "dateModified": "2026-05-17"
+      }
+    </script>
+  </head>
+  <body>
+    <div id="resume">
+      <header id="header">
+        <h1>Ethan Chennault</h1>
+        <p>
+          (510) 457-5290 •
+          <a href="mailto:ethanolchennault@gmail.com"
+            >ethanolchennault@gmail.com</a
+          >
+          •
+          <a href="https://ethan.chennault.net" target="_blank"
+            >ethan.chennault.net</a
+          >
+        </p>
+      </header>
+
+      <section id="education">
+        <h2>Education</h2>
+        <hr />
+        <section class="education-item">
+          <div class="seperate">
+            <b>University of California, Irvine</b>
+            <span>Sep 2023 - June 2027</span>
+          </div>
+          <div class="seperate">
+            <span
+              >B.S. in Computer Science, B.S. in Business Information
+              Management</span
+            >
+            <span>GPA: 3.83, Dean's Honor List</span>
+          </div>
+        </section>
+      </section>
+
+      <section id="technical-skills">
+        <h2>Technical Skills</h2>
+        <hr />
+        <div id="skills-list">
+          <p>
+            <b>Programming Languages: </b>Python, Go, JavaScript/TypeScript, SQL
+          </p>
+          <p>
+            <b>Backend: </b>FastAPI, Postgres, pgvector, MongoDB, SQLite,
+            Supabase, Redis
+          </p>
+          <p>
+            <b>Infrastructure / DevOps: </b>Docker, Kubernetes, Rancher, GCP,
+            Nginx, GitHub Actions, Git
+          </p>
+        </div>
+      </section>
+
+      <section id="experience">
+        <h2>Experience</h2>
+        <hr />
+        <section class="experience-item">
+          <div class="seperate">
+            <b>Software Engineering Intern</b>
+            <span>June 2026 - Present</span>
+          </div>
+          <div class="seperate">
+            <span>The Aerospace Corporation</span>
+            <span>El Segundo, CA</span>
+          </div>
+          <ul>
+            <li>
+              Engineered a Golang file-processing pipeline for a RAG-assisted AI
+              chatbot that parses and embeds hundreds of thousands of
+              proprietary Redis-queued documents into a Postgres/pgvector store,
+              giving analysts fast semantic search used across rocket launches
+              the company monitors.
+            </li>
+            <li>
+              Modernized a day-of-launch monitoring application (Winds) by
+              designing its MongoDB schema through interviews with launch
+              analysts to identify needed wind telemetry, then populating it via
+              automated Python script that consolidated data from disparate
+              file-based sources.
+            </li>
+            <li>
+              Built the Winds REST API in Python/FastAPI from the company's
+              internal service template, achieving 100% test coverage and giving
+              the React dashboard secure, read-only access to the underlying
+              MongoDB telemetry data.
+            </li>
+            <li>
+              Utilized zero-downtime rolling deploys to achieve 100% uptime when
+              deploying the Winds API and UI to an on-prem Rancher Kubernetes
+              cluster, containerizing services with Docker and applying k8s
+              manifests via kubectl.
+            </li>
+          </ul>
+        </section>
+
+        <section class="experience-item">
+          <div class="seperate">
+            <b>Software Engineering Intern</b>
+            <span>June 2025 - June 2026</span>
+          </div>
+          <div class="seperate">
+            <span>Lawrence Berkeley National Labs</span>
+            <span>Berkeley, CA</span>
+          </div>
+          <ul>
+            <li>
+              Reduced Python REST API response sizes up to 75% through
+              pagination, cutting load times for researchers querying large
+              network topology datasets.
+            </li>
+            <li>
+              Served low-latency graph data to network map builders from a
+              cached SQLite store, refreshed automatically every hour via GitHub
+              Actions.
+            </li>
+            <li>
+              Enabled teams to manage network topology data in Google Sheets by
+              integrating a GCP service account for ingestion via the Google
+              Drive API.
+            </li>
+          </ul>
+        </section>
+      </section>
+
+      <section id="projects">
+        <h2>Projects</h2>
+        <hr />
+
+        <section class="project-item">
+          <div class="seperate">
+            <div><b>UCI ZotBins Project</b> <span>(Smart Trash Bin)</span></div>
+            <span>Sep 2025 - Present</span>
+          </div>
+          <ul>
+            <li>
+              Implemented a Python/FastAPI REST API, complete with OpenAPI
+              specs, to post thousands of sensor recordings from smart trash
+              bins to Supabase.
+            </li>
+            <li>
+              Led the design and development of a TypeScript/React dashboard
+              with D3.js, consolidating datasets into trash data trend insights.
+            </li>
+            <li>
+              Architected an Nginx reverse proxy to selectively expose
+              public-facing API endpoints for external consumers.
+            </li>
+          </ul>
+        </section>
+      </section>
+    </div>
+  </body>
+</html>

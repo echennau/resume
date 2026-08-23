@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Ethan Chennault Resume</title>
+    <link rel="stylesheet" href="../style.css" />
+    <meta name="description" content="Ethan Chennault's Resume" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Ethan Chennault - Resume",
+        "description": "Professional Resume for Ethan Chennault",
+        "author": {
+          "@type": "Person",
+          "name": "Ethan Chennault"
+        },
+        "datePublished": "2026-05-17",
+        "dateModified": "2026-05-17"
+      }
+    </script>
+  </head>
+  <body>
+    <div id="resume">
+      <header id="header">
+        <h1>Ethan Chennault</h1>
+        <p>
+          (510) 457-5290 •
+          <a href="mailto:ethanolchennault@gmail.com"
+            >ethanolchennault@gmail.com</a
+          >
+          •
+          <a href="https://ethan.chennault.net" target="_blank"
+            >ethan.chennault.net</a
+          >
+        </p>
+      </header>
+
+      <section id="education">
+        <h2>Education</h2>
+        <hr />
+        <section class="education-item">
+          <div class="seperate">
+            <b>University of California, Irvine</b>
+            <span>Sep 2023 - June 2027</span>
+          </div>
+          <div class="seperate">
+            <span
+              >B.S. in Computer Science, B.S. in Business Information
+              Management</span
+            >
+            <span>GPA: 3.83, Dean's Honor List</span>
+          </div>
+        </section>
+      </section>
+
+      <section id="technical-skills">
+        <h2>Technical Skills</h2>
+        <hr />
+        <div id="skills-list">
+          <p><b>Programming Languages: </b>JavaScript/TypeScript, Python, Go</p>
+          <p>
+            <b>Frontend: </b>React, HTML/CSS, Tailwind, MUI, Plotly.js, D3.js,
+            TanStack Query, Next.js
+          </p>
+          <p>
+            <b>Backend: </b>FastAPI, Node.js, Express, Postgres, Supabase,
+            pgvector, MongoDB, SQLite, Redis
+          </p>
+          <p>
+            <b>Infrastructure / DevOps: </b>Docker, Kubernetes, Rancher, Nginx,
+            GitHub Actions, Git
+          </p>
+        </div>
+      </section>
+
+      <section id="experience">
+        <h2>Experience</h2>
+        <hr />
+        <section class="experience-item">
+          <div class="seperate">
+            <b>Software Engineering Intern</b>
+            <span>June 2026 - Present</span>
+          </div>
+          <div class="seperate">
+            <span>The Aerospace Corporation</span>
+            <span>El Segundo, CA</span>
+          </div>
+          <ul>
+            <li>
+              Modernized a launch day monitoring application (Winds) for
+              analysts to decide launch go/no-go based on wind data, replacing a
+              manual data-review process with a Python/FastAPI REST API over
+              MongoDB and a React/TypeScript frontend rendering live telemetry
+              with Plotly.js and TanStack Query.
+            </li>
+            <li>
+              Utilized zero-downtime rolling deploys to achieve 100% uptime when
+              deploying the Winds API and UI to an on-prem Rancher Kubernetes
+              cluster, containerizing services with Docker and applying k8s
+              manifests via kubectl.
+            </li>
+            <li>
+              Engineered a Golang file-processing pipeline for a RAG-assisted AI
+              chatbot that parses and embeds hundreds of thousands of
+              Redis-queued documents into a Postgres/pgvector store, giving
+              analysts fast semantic search used across rocket launches the
+              company oversees.
+            </li>
+          </ul>
+        </section>
+
+        <section class="experience-item">
+          <div class="seperate">
+            <b>Software Engineering Intern</b>
+            <span>June 2025 - June 2026</span>
+          </div>
+          <div class="seperate">
+            <span>Lawrence Berkeley National Labs</span>
+            <span>Berkeley, CA</span>
+          </div>
+          <ul>
+            <li>
+              Built a network visualization tool allowing DOE researchers
+              to construct, visualize, and export network topology
+              graphs, with a Python/FastAPI/SQLite backend and
+              TypeScript/React/Tailwind user interface.
+            </li>
+            <li>
+              Accelerated frontend development for other engineers by designing
+              and implementing a custom 30+ component library with React and
+              SCSS, documented fully in Storybook.
+            </li>
+            <li>
+              Shortened component library release cycles by authoring GitHub
+              Actions testing workflows with test sharding and Docker
+              containers, cutting CI runtime by 80% and tightening contributor
+              feedback loops.
+            </li>
+          </ul>
+        </section>
+
+        <section class="experience-item">
+          <div class="seperate">
+            <b>Undergraduate Research Assistant</b>
+            <span>Nov 2024 - Dec 2025</span>
+          </div>
+          <div class="seperate">
+            <span>University of California, Irvine</span>
+            <span>Irvine, CA</span>
+          </div>
+          <ul>
+            <li>
+              Enabled researchers to submit hundreds of concurrent HPC jobs on
+              school Linux servers that were previously manually managed by
+              implementing a React MUI interface with Node.js and Express
+              backend.
+            </li>
+          </ul>
+        </section>
+      </section>
+
+      <section id="projects">
+        <h2>Projects</h2>
+        <hr />
+
+        <section class="project-item">
+          <div class="seperate">
+            <div><b>UCI ZotBins Project</b> <span>(Smart Trash Bin)</span></div>
+            <span>Sep 2025 - Present</span>
+          </div>
+          <ul>
+            <li>
+              Led design and development of a TypeScript/React D3.js dashboard
+              surfacing trash data trends.
+            </li>
+            <li>
+              Implemented a Python/FastAPI REST API to post thousands of
+              sensor recordings to Supabase.
+            </li>
+            <li>
+              Architected an Nginx reverse proxy to selectively expose API
+              endpoints for external consumers.
+            </li>
+          </ul>
+        </section>
+      </section>
+    </div>
+  </body>
+</html>

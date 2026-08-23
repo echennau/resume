@@ -37,18 +37,18 @@ body {
 
 /* Typography */
 h1 {
-  font-size: 1.7rem;
+  font-size: 1.55rem;
   font-family: "Noto Serif", serif;
 }
 
 h2 {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-family: "Noto Serif", serif;
 }
 
 h3 {
   font-family: "League Spartan", sans-serif;
-  line-height: 1.2;
+  line-height: 1.3;
   font-weight: 600;
 }
 
@@ -59,9 +59,9 @@ li,
 span,
 table {
   font-size: 0.9rem;
-  line-height: 1.07rem;
+  line-height: 1.48;
   letter-spacing: 0.4px;
-  font-weight: 300;
+  font-weight: 400;
   font-family: "League Spartan", sans-serif;
   color: #282828;
 }
@@ -75,7 +75,7 @@ ul {
 }
 
 ::marker {
-  font-size: 1.25rem;
+  font-size: 0.75rem;
 }
 
 a {
@@ -113,19 +113,7 @@ hr {
 .education-item,
 .experience-item,
 .project-item {
-  margin-bottom: 0.25rem;
-}
-
-#skills-table {
-  width: 100%;
-  border-collapse: collapse;
-  table-layout: fixed;
-}
-
-#skills-table td {
-  width: 100%;
-  vertical-align: top;
-  padding: 0;
+  margin-bottom: 0.3rem;
 }
 
 #resume {

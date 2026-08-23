@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Ethan Chennault Resume</title>
+    <link rel="stylesheet" href="../style.css" />
+    <meta name="description" content="Ethan Chennault's Resume" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Ethan Chennault - Resume",
+        "description": "Professional Resume for Ethan Chennault",
+        "author": {
+          "@type": "Person",
+          "name": "Ethan Chennault"
+        },
+        "datePublished": "2026-05-17",
+        "dateModified": "2026-05-17"
+      }
+    </script>
+  </head>
+  <body>
+    <div id="resume">
+      <header id="header">
+        <h1>Ethan Chennault</h1>
+        <p>
+          (510) 457-5290 •
+          <a href="mailto:ethanolchennault@gmail.com"
+            >ethanolchennault@gmail.com</a
+          >
+          •
+          <a href="https://ethan.chennault.net" target="_blank"
+            >ethan.chennault.net</a
+          >
+        </p>
+      </header>
+
+      <section id="education">
+        <h2>Education</h2>
+        <hr />
+        <section class="education-item">
+          <div class="seperate">
+            <b>University of California, Irvine</b>
+            <span>Sep 2023 - June 2027</span>
+          </div>
+          <div class="seperate">
+            <span
+              >B.S. in Computer Science, B.S. in Business Information
+              Management</span
+            >
+            <span>GPA: 3.83, Dean's Honor List</span>
+          </div>
+        </section>
+      </section>
+
+      <section id="technical-skills">
+        <h2>Technical Skills</h2>
+        <hr />
+        <div id="skills-list">
+          <p><b>Programming Languages: </b>JavaScript/TypeScript, Python</p>
+          <p>
+            <b>Frontend: </b>React, HTML/CSS, Tailwind, MUI, Vite, Next.js,
+            Plotly.js, D3.js, TanStack Query
+          </p>
+          <p><b>Backend: </b>FastAPI, Node.js, MongoDB, SQLite</p>
+        </div>
+      </section>
+
+      <section id="experience">
+        <h2>Experience</h2>
+        <hr />
+        <section class="experience-item">
+          <div class="seperate">
+            <b>Software Engineering Intern</b>
+            <span>June 2026 - Present</span>
+          </div>
+          <div class="seperate">
+            <span>The Aerospace Corporation</span>
+            <span>El Segundo, CA</span>
+          </div>
+          <ul>
+            <li>
+              Modernized a launch day monitoring application (Winds) with a
+              React/TypeScript frontend rendering live wind telemetry via
+              Plotly.js, backed by a Python/FastAPI REST API over MongoDB,
+              replacing a previously manual process for deciding launch go/no-go
+              decisions based on wind data.
+            </li>
+            <li>
+              Implemented a dynamic, drag-and-drop dashboard layout for the
+              Winds display using the GridStack library, letting launch analysts
+              create, resize, and reorganize chart cards to match each launch's
+              specific review needs.
+            </li>
+            <li>
+              Kept the Winds dashboard continuously current by building its
+              client data layer on Vite, TypeScript, and TanStack Query,
+              caching API responses and polling for updates on a fixed
+              interval to eliminate manual refreshes.
+            </li>
+            <li>
+              Built and maintain an internal React dashboard/chart
+              component library in Storybook, complete with integrated
+              regression tests, adopted across 4 projects division-wide to
+              let teams rapidly prototype responsive data-viz dashboards.
+            </li>
+          </ul>
+        </section>
+
+        <section class="experience-item">
+          <div class="seperate">
+            <b>Software Engineering Intern</b>
+            <span>June 2025 - June 2026</span>
+          </div>
+          <div class="seperate">
+            <span>Lawrence Berkeley National Labs</span>
+            <span>Berkeley, CA</span>
+          </div>
+          <ul>
+            <li>
+              Built a network visualization tool allowing DOE researchers
+              to construct, visualize, and export network topology
+              graphs, with a Python/FastAPI/SQLite backend and
+              TypeScript/React/Tailwind user interface.
+            </li>
+            <li>
+              Accelerated frontend development for other engineers by designing
+              and implementing a custom 30+ component library with React and
+              SCSS, documented fully in Storybook.
+            </li>
+            <li>
+              Prevented future regressions from shipping to downstream
+              applications by implementing Playwright screenshot regression and
+              interaction tests across all 30+ design system components.
+            </li>
+          </ul>
+        </section>
+      </section>
+
+      <section id="projects">
+        <h2>Projects</h2>
+        <hr />
+
+        <section class="project-item">
+          <div class="seperate">
+            <div><b>UCI ZotBins Project</b> <span>(Smart Trash Bin)</span></div>
+            <span>Sep 2025 - Present</span>
+          </div>
+          <ul>
+            <li>
+              Led the design and development of a TypeScript/React dashboard
+              with D3.js, consolidating datasets into trash data trend insights.
+            </li>
+            <li>
+              Leveraged Next.js SSR to deliver ~200ms load times for the
+              dashboard bin maintainers use to verify waste-sorting accuracy.
+            </li>
+            <li>
+              Implemented a Python/FastAPI REST API, complete with OpenAPI
+              specs, to post thousands of sensor recordings from smart trash
+              bins to Supabase.
+            </li>
+          </ul>
+        </section>
+      </section>
+    </div>
+  </body>
+</html>
