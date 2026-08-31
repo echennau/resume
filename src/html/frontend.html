@@ -60,12 +60,17 @@
         <h2>Technical Skills</h2>
         <hr />
         <div id="skills-list">
-          <p><b>Programming Languages: </b>JavaScript/TypeScript, Python</p>
           <p>
-            <b>Frontend: </b>React, HTML/CSS, Tailwind, MUI, Vite, Next.js,
-            Plotly.js, D3.js, TanStack Query
+            <b>Programming Languages: </b>JavaScript/TypeScript, Python, SQL
           </p>
-          <p><b>Backend: </b>FastAPI, Node.js, MongoDB, SQLite</p>
+          <p>
+            <b>Frontend: </b>React, Vue, HTMX, HTML/CSS, Tailwind, Material UI,
+            Next.js, Plotly.js, D3.js, TanStack Query
+          </p>
+          <p>
+            <b>Backend: </b>Node.js, Vite, FastAPI, MongoDB, SQLite, Playwright,
+            Docker/Podman
+          </p>
         </div>
       </section>
 
@@ -84,28 +89,28 @@
           <ul>
             <li>
               Modernized a launch day monitoring application (Winds) with a
-              React/TypeScript frontend rendering live wind telemetry via
+              React/TypeScript dashboard rendering live wind telemetry via
               Plotly.js, backed by a Python/FastAPI REST API over MongoDB,
               replacing a previously manual process for deciding launch go/no-go
               decisions based on wind data.
             </li>
             <li>
-              Implemented a dynamic, drag-and-drop dashboard layout for the
-              Winds display using the GridStack library, letting launch analysts
-              create, resize, and reorganize chart cards to match each launch's
-              specific review needs.
+              Kept the Winds frontend data continuously current by building its
+              client data layer on Vite, TypeScript, and TanStack Query, caching
+              API responses and polling for updates on a fixed interval to
+              eliminate manual refreshes.
             </li>
             <li>
-              Kept the Winds dashboard continuously current by building its
-              client data layer on Vite, TypeScript, and TanStack Query,
-              caching API responses and polling for updates on a fixed
-              interval to eliminate manual refreshes.
+              Built and maintain an internal React dashboard/chart component
+              library in Storybook, complete with integrated Vitest regression
+              tests, adopted across 4 projects division-wide to let teams
+              rapidly prototype responsive data-visualization dashboards.
             </li>
             <li>
-              Built and maintain an internal React dashboard/chart
-              component library in Storybook, complete with integrated
-              regression tests, adopted across 4 projects division-wide to
-              let teams rapidly prototype responsive data-viz dashboards.
+              Developed a Next.js app with a custom Node.js container manager
+              that spins up ~12 project demo via Podman containers and renders
+              them on an interactive touch-table kiosk, giving all ~120
+              engineers across the division visibility into each other's work.
             </li>
           </ul>
         </section>
@@ -121,15 +126,15 @@
           </div>
           <ul>
             <li>
-              Built a network visualization tool allowing DOE researchers
-              to construct, visualize, and export network topology
-              graphs, with a Python/FastAPI/SQLite backend and
-              TypeScript/React/Tailwind user interface.
+              Accelerated frontend development for other engineers by designing
+              and implementing a custom WCAG-compliant 30+ component library
+              built for React, Vue, HTMX, all within a monorepo built with
+              Turborepo.
             </li>
             <li>
-              Accelerated frontend development for other engineers by designing
-              and implementing a custom 30+ component library with React and
-              SCSS, documented fully in Storybook.
+              Built a network visualization tool allowing DOE researchers to
+              construct, visualize, and export network topology graphs, with a
+              Python/FastAPI/SQLite backend and TypeScript/React/Tailwind UI.
             </li>
             <li>
               Prevented future regressions from shipping to downstream
@@ -152,7 +157,8 @@
           <ul>
             <li>
               Led the design and development of a TypeScript/React dashboard
-              with D3.js, consolidating datasets into trash data trend insights.
+              with D3.js, consolidating datasets into trash data trend insights
+              for student environmental researchers.
             </li>
             <li>
               Leveraged Next.js SSR to deliver ~200ms load times for the
