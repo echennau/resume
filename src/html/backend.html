@@ -68,7 +68,8 @@
             Supabase, Redis
           </p>
           <p>
-            <b>Infrastructure / DevOps: </b>Docker, Kubernetes, Rancher, GCP,
+            <b>Infrastructure / DevOps: </b>Docker, Kubernetes, Rancher, Helm, ArgoCD,
+            GCP,
             Nginx, GitHub Actions, Git
           </p>
         </div>
@@ -108,10 +109,10 @@
               MongoDB telemetry data.
             </li>
             <li>
-              Utilized zero-downtime rolling deploys to achieve 100% uptime when
-              deploying the Winds API and UI to an on-prem Rancher Kubernetes
-              cluster, containerizing services with Docker and applying k8s
-              manifests via kubectl.
+              Automated Winds releases by replacing manual kubectl deploys with
+              ArgoCD GitOps on an on-prem Rancher Kubernetes cluster, enabling
+              more frequent zero-downtime updates with git-based rollbacks so
+              analysts get new features without interrupting wind data access.
             </li>
           </ul>
         </section>

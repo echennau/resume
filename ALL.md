@@ -21,7 +21,7 @@ React, HTML/CSS, Tailwind, Vue, Vite, Webpack, shadcn, MUI, Plotly.js, TanStack 
 FastAPI, Node/Express, Next.js, Remix.js, Postgres, pgvector, SQLite, Supabase, MongoDB, Elasticsearch, Redis
 
 ### Infrastructure / DevOps
-GCP, AWS, Vercel, Docker, Kubernetes, Rancher, Helm, Jenkins, Podman, Nginx, GitHub Actions, Git
+GCP, AWS, Vercel, Docker, Kubernetes, Rancher, Helm, ArgoCD, Jenkins, Podman, Nginx, GitHub Actions, Git
 
 ---
 
@@ -30,7 +30,7 @@ GCP, AWS, Vercel, Docker, Kubernetes, Rancher, Helm, Jenkins, Podman, Nginx, Git
 ### Software Engineering Intern, The Aerospace Corporation
 **June 2026 - Present | El Segundo, CA**
 
-> **Context:** Aerospace and defense R&D company. Working across several internal tools supporting launch operations and engineering visibility: STARS Jedi (a RAG-based document search/chatbot pipeline for day-of-launch analysts), Winds (a full-stack wind-monitoring dashboard used to decide launch go/no-go based on wind data), an internal React component library for data-viz dashboards, and an internal showcase app for division project demos. Stack: Go, Redis, Docling OCR, OpenAI API, Postgres/pgvector, Python, FastAPI, MongoDB, React, TypeScript, Vite, TanStack Query, Material UI, Plotly.js, GridStack, Node.js, Podman, Docker, Kubernetes, Rancher, Helm, Jenkins/Groovy, Gitea, Storybook. Good for: full-stack, backend, AI/RAG, DevOps/infra roles.
+> **Context:** Aerospace and defense R&D company. Working across several internal tools supporting launch operations and engineering visibility: STARS Jedi (a RAG-based document search/chatbot pipeline for day-of-launch analysts), Winds (a full-stack wind-monitoring dashboard used to decide launch go/no-go based on wind data), an internal React component library for data-viz dashboards, and an internal showcase app for division project demos. Stack: Go, Redis, Docling OCR, OpenAI API, Postgres/pgvector, Python, FastAPI, MongoDB, React, TypeScript, Vite, TanStack Query, Material UI, Plotly.js, GridStack, Node.js, Podman, Docker, Kubernetes, Rancher, Helm, ArgoCD, Jenkins/Groovy, Gitea, Storybook. Good for: full-stack, backend, AI/RAG, DevOps/infra roles.
 
 - ⭐ Modernized a launch day monitoring application for analysts to decide launch go/no-go decisions based on wind data, replacing a previously manual data-review process with a Python/FastAPI REST API over MongoDB and a React/TypeScript frontend that renders live wind telemetry with Plotly.js and TanStack Query. `[python, fastapi, mongodb, react, typescript, plotly, tanstack-query, fullstack, data-viz]`
 - ⭐ Built the Winds REST API in Python/FastAPI from the company's internal service template with 100% test coverage, giving the React dashboard reliable access to the underlying data. `[python, fastapi, testing, backend, api]`
@@ -39,8 +39,9 @@ GCP, AWS, Vercel, Docker, Kubernetes, Rancher, Helm, Jenkins, Podman, Nginx, Git
 - Designed the MongoDB schema for Winds through interviews with launch analysts to identify required data to populate the UI, then populated it via a Python script consolidating web-scraped data and a legacy file-based system. `[mongodb, python, requirements, ux-research, backend, data-modeling]`
 - Implemented a dynamic, user-configurable dashboard for Winds with GridStack, letting launch analysts create, resize, and reorganize chart cards to fit their workflow. `[react, gridstack, frontend, ui]`
 - Kept the Winds dashboard continuously current by building its client data layer on Vite, TypeScript, and TanStack Query, caching API responses and polling for updates on a fixed interval to eliminate manual refreshes. `[react, typescript, vite, tanstack-query, frontend]`
-- Utilized zero-downtime rolling deploys to achieve 100% uptime when deploying the Winds API and UI to an on-prem Rancher Kubernetes cluster, containerizing services with Docker and applying k8s manifests via kubectl. `[docker, kubernetes, rancher, gitea, devops]`
-- Built a CI/CD pipeline for Winds with Jenkins (Groovy) and Helm charts, replacing manual kubectl deployments with automated, repeatable releases. `[jenkins, groovy, helm, kubernetes, ci-cd, devops]`
+- Migrated Winds deployments on an on-prem Rancher Kubernetes cluster from manual kubectl applies to GitOps, building a GitOps repo of Helm charts for the Winds API, UI, app security framework, and MongoDB, and onboarding Winds onto the team's existing ArgoCD instance by configuring its ArgoCD Applications. `[gitops, argocd, helm, kubernetes, rancher, gitea, devops]`
+- ⭐ Deployed Winds via ArgoCD auto-sync with self-heal and pruning to keep the cluster matching git, using per-environment Helm values for dev/staging/prod, zero-downtime rolling updates (100% uptime), and git-based rollbacks. `[argocd, gitops, helm, kubernetes, docker, devops]`
+- Built a CI/CD pipeline for Winds where Jenkins (Groovy) builds and pushes Docker images and bumps image tags in the GitOps repo, and ArgoCD syncs the change to the cluster, replacing manual kubectl deployments with automated, repeatable releases and increasing deployment frequency so analysts get new features without interrupting wind data access. `[jenkins, groovy, docker, argocd, helm, gitops, ci-cd, devops]`
 - Led requirements-gathering meetings and interviews with end-user launch analysts to iteratively refine the Winds dashboard's design and functionality. `[requirements, ux-research, leadership]`
 - Developed a Node.js app that spins up ~12 project demo sites via Podman containers and renders them on an interactive touch-table kiosk, giving all ~120 engineers across the division visibility into each other's work. `[node, podman, containers, internal-tools]`
 

@@ -70,7 +70,8 @@
             pgvector, MongoDB, SQLite, Redis
           </p>
           <p>
-            <b>Infrastructure / DevOps: </b>Docker, Kubernetes, Rancher, Nginx,
+            <b>Infrastructure / DevOps: </b>Docker, Kubernetes, Rancher, Helm, ArgoCD,
+            Nginx,
             GitHub Actions, Git
           </p>
         </div>
@@ -97,10 +98,10 @@
               with Plotly.js and TanStack Query.
             </li>
             <li>
-              Utilized zero-downtime rolling deploys to achieve 100% uptime when
-              deploying the Winds API and UI to an on-prem Rancher Kubernetes
-              cluster, containerizing services with Docker and applying k8s
-              manifests via kubectl.
+              Automated Winds releases by replacing manual kubectl deploys with
+              ArgoCD GitOps on an on-prem Rancher Kubernetes cluster, enabling
+              more frequent zero-downtime updates with git-based rollbacks so
+              analysts get new features without interrupting wind data access.
             </li>
             <li>
               Engineered a Golang file-processing pipeline for a RAG-assisted AI
