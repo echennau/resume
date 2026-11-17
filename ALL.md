@@ -18,7 +18,7 @@ TypeScript, JavaScript, Python, SQL, Go
 React, HTML/CSS, Tailwind, Vue, Vite, Webpack, shadcn, MUI, Plotly.js, TanStack Query, D3.js
 
 ### Backend
-FastAPI, Node/Express, Next.js, Remix.js, Postgres, pgvector, SQLite, Supabase, MongoDB, Elasticsearch, Redis
+FastAPI, Node/Express, Next.js, Remix.js, PostgreSQL, pgvector, SQLite, Supabase, MongoDB, Elasticsearch, Redis
 
 ### Infrastructure / DevOps
 GCP, AWS, Vercel, Docker, Kubernetes, Rancher, Helm, ArgoCD, Jenkins, Podman, Nginx, GitHub Actions, Git
@@ -30,11 +30,11 @@ GCP, AWS, Vercel, Docker, Kubernetes, Rancher, Helm, ArgoCD, Jenkins, Podman, Ng
 ### Software Engineering Intern, The Aerospace Corporation
 **June 2026 - Present | El Segundo, CA**
 
-> **Context:** Aerospace and defense R&D company. Working across several internal tools supporting launch operations and engineering visibility: STARS Jedi (a RAG-based document search/chatbot pipeline for day-of-launch analysts), Winds (a full-stack wind-monitoring dashboard used to decide launch go/no-go based on wind data), an internal React component library for data-viz dashboards, and an internal showcase app for division project demos. Stack: Go, Redis, Docling OCR, OpenAI API, Postgres/pgvector, Python, FastAPI, MongoDB, React, TypeScript, Vite, TanStack Query, Material UI, Plotly.js, GridStack, Node.js, Podman, Docker, Kubernetes, Rancher, Helm, ArgoCD, Jenkins/Groovy, Gitea, Storybook. Good for: full-stack, backend, AI/RAG, DevOps/infra roles.
+> **Context:** Aerospace and defense R&D company. Working across several internal tools supporting launch operations and engineering visibility: STARS Jedi (a RAG-based document search/chatbot pipeline for day-of-launch analysts), Winds (a full-stack wind-monitoring dashboard used to decide launch go/no-go based on wind data), an internal React component library for data-viz dashboards, and an internal showcase app for division project demos. Stack: Go, Redis, Docling OCR, OpenAI API, PostgreSQL/pgvector, Python, FastAPI, MongoDB, React, TypeScript, Vite, TanStack Query, Material UI, Plotly.js, GridStack, Node.js, Podman, Docker, Kubernetes, Rancher, Helm, ArgoCD, Jenkins/Groovy, Gitea, Storybook. Good for: full-stack, backend, AI/RAG, DevOps/infra roles.
 
 - ⭐ Modernized a launch day monitoring application for analysts to decide launch go/no-go decisions based on wind data, replacing a previously manual data-review process with a Python/FastAPI REST API over MongoDB and a React/TypeScript frontend that renders live wind telemetry with Plotly.js and TanStack Query. `[python, fastapi, mongodb, react, typescript, plotly, tanstack-query, fullstack, data-viz]`
 - ⭐ Built the Winds REST API in Python/FastAPI from the company's internal service template with 100% test coverage, giving the React dashboard reliable access to the underlying data. `[python, fastapi, testing, backend, api]`
-- ⭐ Engineered a Golang file-processing pipeline for a RAG-assisted AI chatbot that processes Redis queued documents by parsing and embedding hundreds of thousands of proprietary files into a Postgres/pgvector store, giving day-of-launch analysts fast semantic search used across rocket launches the company monitors. `[go, redis, postgres, pgvector, openai, rag, backend, ai]`
+- ⭐ Engineered a Golang file-processing pipeline for a RAG-assisted AI chatbot that processes Redis queued documents by parsing and embedding thousands of documents into a PostgreSQL/pgvector store, giving day-of-launch analysts fast semantic search used across rocket launches the company oversees. `[go, redis, postgres, postgresql, pgvector, openai, rag, backend, ai]`
 - ⭐ Assisted in building and maintaining an internal React dashboard/chart component library in Storybook, complete with integrated regression tests, adopted across 4 projects division-wide to let teams rapidly prototype responsive data-viz dashboards. `[react, storybook, component-library, testing, design-systems, data-viz]`
 - Designed the MongoDB schema for Winds through interviews with launch analysts to identify required data to populate the UI, then populated it via a Python script consolidating web-scraped data and a legacy file-based system. `[mongodb, python, requirements, ux-research, backend, data-modeling]`
 - Implemented a dynamic, user-configurable dashboard for Winds with GridStack, letting launch analysts create, resize, and reorganize chart cards to fit their workflow. `[react, gridstack, frontend, ui]`
@@ -59,7 +59,7 @@ GCP, AWS, Vercel, Docker, Kubernetes, Rancher, Helm, ArgoCD, Jenkins, Podman, Ng
 - Reduced Python REST API response sizes up to 75% through pagination, cutting page load times for viewing large datasets of map information. `[python, fastapi, backend, performance]`
 - Assisted in designing an organization-wide token-based design system in Figma for consistent UI/UX across applications. `[figma, design-systems, ui]`
 - Prevented future regressions from shipping to downstream applications by implementing Playwright screenshot regression and interaction tests across all 30+ design system components. `[playwright, jest, testing, screenshot, regression]`
-- Shortened component library release cycles by authoring GitHub Actions testing workflows with test sharding and Docker containers, cutting CI runtime by 80% and tightening contributor feedback loops. `[github-actions, ci-cd, docker, devops, testing]`
+- Shortened component library release cycles by authoring GitHub Actions testing workflows with test sharding and Docker containers, cutting CI runtime by 80% and tightening contributor feedback loops. The component library is distributed as an npm package. `[github-actions, ci-cd, docker, devops, testing, npm]`
 
 ### Undergraduate Research Assistant, University of California, Irvine
 **Nov 2024 - Dec 2025 | Irvine, CA**

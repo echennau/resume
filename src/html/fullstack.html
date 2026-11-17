@@ -60,19 +60,21 @@
         <h2>Technical Skills</h2>
         <hr />
         <div id="skills-list">
-          <p><b>Programming Languages: </b>JavaScript/TypeScript, Python, Go</p>
+          <p>
+            <b>Programming Languages: </b>JavaScript/TypeScript, Python, Go,
+            Groovy
+          </p>
           <p>
             <b>Frontend: </b>React, HTML/CSS, Tailwind, MUI, Plotly.js, D3.js,
             TanStack Query, Next.js
           </p>
           <p>
-            <b>Backend: </b>FastAPI, Node.js, Express, Postgres, Supabase,
-            pgvector, MongoDB, SQLite, Redis
+            <b>Backend: </b>FastAPI, Node.js, Express, PostgreSQL, Supabase,
+            MongoDB, SQLite, Redis
           </p>
           <p>
-            <b>Infrastructure / DevOps: </b>Docker, Kubernetes, Rancher, Helm, ArgoCD,
-            Nginx,
-            GitHub Actions, Git
+            <b>Infrastructure / DevOps: </b>Docker, Kubernetes, Helm, ArgoCD,
+            Nginx, GitHub Actions, GitOps, Git
           </p>
         </div>
       </section>
@@ -98,17 +100,16 @@
               with Plotly.js and TanStack Query.
             </li>
             <li>
-              Automated Winds releases by replacing manual kubectl deploys with
-              ArgoCD GitOps on an on-prem Rancher Kubernetes cluster, enabling
-              more frequent zero-downtime updates with git-based rollbacks so
-              analysts get new features without interrupting wind data access.
+              Engineered a Golang file-processing pipeline for a RAG-assisted AI
+              chatbot that parses and embeds thousands of Redis-queued documents
+              into a PostgreSQL/pgvector store, giving analysts fast semantic
+              search used across rocket launches the company oversees.
             </li>
             <li>
-              Engineered a Golang file-processing pipeline for a RAG-assisted AI
-              chatbot that parses and embeds hundreds of thousands of
-              Redis-queued documents into a Postgres/pgvector store, giving
-              analysts fast semantic search used across rocket launches the
-              company oversees.
+              Automated Winds releases with a Jenkins (Groovy) CI/CD pipeline
+              that builds Docker images and updates a GitOps repo of Helm
+              charts, which ArgoCD syncs to an on-prem Rancher Kubernetes
+              cluster, enabling zero-downtime updates with git-based rollbacks.
             </li>
           </ul>
         </section>
@@ -124,10 +125,10 @@
           </div>
           <ul>
             <li>
-              Built a network visualization tool allowing DOE researchers
-              to construct, visualize, and export network topology
-              graphs, with a Python/FastAPI/SQLite backend and
-              TypeScript/React/Tailwind user interface.
+              Built a network visualization tool allowing DOE researchers to
+              construct, visualize, and export network topology graphs, with a
+              Python/FastAPI/SQLite backend and TypeScript/React/Tailwind user
+              interface.
             </li>
             <li>
               Accelerated frontend development for other engineers by designing
@@ -136,9 +137,8 @@
             </li>
             <li>
               Shortened component library release cycles by authoring GitHub
-              Actions testing workflows with test sharding and Docker
-              containers, cutting CI runtime by 80% and tightening contributor
-              feedback loops.
+              Actions with test sharding and Docker containers, cutting CI
+              runtime by 80% and automatically publishing to npm.
             </li>
           </ul>
         </section>
@@ -178,8 +178,8 @@
               surfacing trash data trends.
             </li>
             <li>
-              Implemented a Python/FastAPI REST API to post thousands of
-              sensor recordings to Supabase.
+              Implemented a Python/FastAPI REST API to post thousands of sensor
+              recordings to Supabase.
             </li>
             <li>
               Architected an Nginx reverse proxy to selectively expose API

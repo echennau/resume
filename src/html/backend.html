@@ -64,7 +64,7 @@
             <b>Programming Languages: </b>Python, Go, JavaScript/TypeScript, SQL
           </p>
           <p>
-            <b>Backend: </b>FastAPI, Postgres, pgvector, MongoDB, SQLite,
+            <b>Backend: </b>FastAPI, PostgreSQL, pgvector, MongoDB, SQLite,
             Supabase, Redis
           </p>
           <p>
@@ -90,10 +90,9 @@
           <ul>
             <li>
               Engineered a Golang file-processing pipeline for a RAG-assisted AI
-              chatbot that parses and embeds hundreds of thousands of
-              proprietary Redis-queued documents into a Postgres/pgvector store,
-              giving analysts fast semantic search used across rocket launches
-              the company monitors.
+              chatbot that parses and embeds thousands of Redis-queued documents
+              into a PostgreSQL/pgvector store, giving analysts fast semantic
+              search used across rocket launches the company oversees.
             </li>
             <li>
               Modernized a day-of-launch monitoring application (Winds) by
@@ -109,10 +108,10 @@
               MongoDB telemetry data.
             </li>
             <li>
-              Automated Winds releases by replacing manual kubectl deploys with
-              ArgoCD GitOps on an on-prem Rancher Kubernetes cluster, enabling
-              more frequent zero-downtime updates with git-based rollbacks so
-              analysts get new features without interrupting wind data access.
+              Automated Winds releases with a Jenkins (Groovy) CI/CD pipeline
+              that builds Docker images and updates a GitOps repo of Helm
+              charts, which ArgoCD syncs to an on-prem Rancher Kubernetes
+              cluster, enabling zero-downtime updates with git-based rollbacks.
             </li>
           </ul>
         </section>
